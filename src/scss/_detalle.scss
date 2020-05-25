@@ -1,0 +1,58 @@
+figure.offBorder {
+    position: relative;
+    width: 100%;
+    left: 0rem;
+    img {
+        height: 27rem;
+        -o-object-fit: contain;
+        object-fit: contain;
+    }
+}
+
+.border-semiRound {
+    border-radius: 2rem 0;
+}
+
+.hero_detalle {
+    height: 150vw;
+    .d-flex {
+        .hero-first {
+            @include background-hero($white3, "../assets/fondo-white.png", 72%, 10%, 6.5rem);
+            background-blend-mode: darken;
+        }
+    }
+}
+
+.cuadro {
+    height: 3.5rem;
+    min-width: 3.9rem;
+}
+
+.goBack_details {
+    #goBack {
+        color: $blue2;
+    }
+}
+
+@media (max-width:767px) {
+    .cuadro {
+        height: 6rem;
+        font-size: 2.3rem;
+        min-width: 5.9rem;
+    }
+    figure.offBorder img {
+        height: 50rem;
+    }
+}
+
+@media (min-width:769px) {
+    .hero_detalle {
+        height: 80vh;
+    }
+}
+
+@media (min-width:1000px) {
+    .hero_detalle {
+        height: 85vh;
+    }
+}

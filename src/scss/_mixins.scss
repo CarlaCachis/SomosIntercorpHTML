@@ -1,0 +1,115 @@
+@mixin background-hero($color, $urlimg, $backSize, $backX, $backY) {
+    background-color: $color;
+    background-image: url($urlimg);
+    background-repeat: no-repeat;
+    background-size: $backSize;
+    background-position-x: $backX;
+    background-position-y: $backY;
+    background-blend-mode: color-dodge;
+    border-radius: 0 0 0 5rem;
+}
+
+@mixin footer($height, $color, $colortop:$white) {
+    height: height;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 6% 0% 6%;
+    background-color: $color;
+    border-top: .2rem solid $colortop;
+}
+
+@mixin btn($color) {
+    border-radius: 2rem;
+    height: 4.15rem;
+    z-index: 200;
+    background-color: $color;
+    border: none;
+}
+
+@mixin hr-tiny-color($color) {
+    border-top: 0.3rem solid $color;
+    width: 3.3rem;
+    border-radius: 2rem;
+    margin-left: 0;
+}
+
+.hero_hr-blue {
+    @include hr-tiny-color($blue3);
+}
+
+.hr-tiny-green {
+    @include hr-tiny-color($green);
+}
+
+.hr-tiny-blue {
+    @include hr-tiny-color($blue3);
+}
+
+.hr-tiny-yellow {
+    @include hr-tiny-color($yellow);
+}
+
+.border-shadow {
+    -webkit-box-shadow: -2px 5px 46px 0px rgba(0, 0, 0, 0.20);
+    box-shadow: 0rem 0.2rem 0.4rem 0.12rem rgba(0, 0, 0, 0.20);
+}
+
+.hr-tiny-line {
+    width: 3.3rem;
+    border-radius: 2rem;
+    margin-left: 0;
+}
+
+.hr-tiny-pink {
+    @include hr-tiny-color($pink);
+}
+
+.background-pink {
+    background-color: $pink;
+}
+
+.background-blue3 {
+    background-color: $blue3;
+}
+
+.background-green {
+    background-color: $green;
+}
+
+.vh40 {
+    height: 40vh;
+}
+
+.vh80 {
+    height: 80vh;
+}
+
+.card-img-height {
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 15rem;
+}
+
+video.card-img-height,
+iframe.card-img-height {
+    height: 22rem;
+}
+
+@media (max-width:767px) {
+    .fsz-3_1 {
+        font-size: 2.5rem;
+    }
+}
+
+.carousel-control-prev-icon {
+    background-image: url("../assets/back.svg");
+    width: 3rem;
+    height: 3rem
+}
+
+.carousel-control-next-icon {
+    background-image: url("../assets/ico-arrow-carousel.svg");
+    width: 3rem;
+    height: 3rem
+}

@@ -1,0 +1,250 @@
+html {
+    font-size: .98vw;
+}
+
+.logo_header {
+    padding-top: 1.875rem;
+    width: 11.5rem;
+}
+
+.btn-register {
+    width: 8.75rem;
+    height: 3.125rem;
+}
+
+.hero_Double {
+    position: relative;
+    height: 0rem;
+    .first-hero__Text {
+        height: 80vh;
+        width: 70vw;
+    }
+    .second-hero__image {
+        position: absolute;
+        margin: 0 auto;
+        right: 0;
+        height: 110vh;
+        width: 50vw;
+        background-size: cover;
+        z-index: 10;
+    }
+    .hero-content {
+        position: relative;
+        z-index: 20;
+        top: -70vh;
+        margin: 0 auto;
+        right: 0;
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: left;
+        .title_hero {
+            font-size: 3.75rem;
+            width: 45%;
+            margin-right: 52%;
+        }
+        .subTitle_hero {
+            font-size: 1.125rem;
+            line-height: 26px;
+            width: 45%;
+            margin-right: 52%;
+        }
+        form.group_Input {
+            width: 39.01rem;
+            position: relative;
+            margin-top: 3.125rem;
+            border-radius: 3.18rem;
+            display: flex;
+            .hero-input {
+                height: 4.375rem;
+                width: 33.75rem;
+                border-radius: 2.1875rem;
+                padding: 0 4.5rem 0 4rem;
+                border: solid 0.0625rem $grey2;
+            }
+            .hero-icon-input {
+                position: absolute;
+                left: 1.6rem;
+                font-size: 1.2rem;
+                align-self: center;
+            }
+            .hero-input_btn {
+                background-color: $pink;
+                border-radius: 2.1875rem;
+                height: 4.375rem;
+                width: 10rem;
+                border: none;
+                font-size: 1rem;
+                position: absolute;
+                left: 29rem;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.hero_Double.hero70 {
+    height: 85vh;
+    .hero-content {
+        top: -55vh;
+    }
+    .first-hero__Text {
+        height: 80vh;
+    }
+    .second-hero__image {
+        height: 90vh;
+    }
+}
+
+.hero_detalle {
+    .hero-content {
+        top: -60vh;
+    }
+    .d-flex {
+        .second-hero__image {
+            height: 85vh;
+        }
+        .hero-first {
+            height: 80vh;
+        }
+    }
+}
+
+.hero_Double.hero_detalle .hero-content .title_hero {
+    font-size: 2.75rem;
+    width: 45%;
+    overflow-wrap: break-word;
+}
+
+.hero-first {
+    @include background-hero($blue1, "../assets/fondo-login.png", 30%, -3.5%, 94%);
+}
+
+.footer_lg {
+    width: 100vw;
+    position: relative;
+    bottom: -105vh;
+}
+
+.hero_Double.one_page,
+.hero_Double.hero-secondPage {
+    .first-hero__Text {
+        height: 100vh;
+        ;
+    }
+}
+
+@media (min-width: 1921px) {}
+
+@media (min-width:1800px) {
+    .container {
+        max-width: 1600px
+    }
+}
+
+@media (max-width:1441px) {}
+
+@media (max-width:1024px) {}
+
+@media (max-width:767px) {
+    .justify-content-sm-between {
+        justify-content: space-between;
+    }
+    .modal-footer {
+        .container_pill {
+            padding: 1rem 5rem;
+            font-size: 2rem;
+        }
+    }
+}
+
+@media (max-width:580px) {
+    .modal-dialog {
+        margin: 6.5rem;
+    }
+    .mobile-col {
+        flex-direction: column !important;
+    }
+    .modal-footer {
+        .container_pill {
+            font-size: 3.7rem;
+            padding: 2rem 8rem;
+        }
+    }
+}
+
+.w50 {
+    width: 50%;
+}
+
+.details {
+    text-align: justify;
+}
+
+input:focus {
+    outline: none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.video {
+    position: relative;
+    padding-bottom: 50.25%;
+    /* 16:9 */
+    height: 0;
+}
+
+.video img {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    cursor: pointer;
+    border-radius: 3rem 0;
+}
+
+.video:after {
+    content: "";
+    position: absolute;
+    display: block;
+    background: url(play-button.png) no-repeat 0 0;
+    top: 45%;
+    left: 45%;
+    width: 46px;
+    height: 36px;
+    z-index: 30;
+    cursor: pointer;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+
+
+/* image poster clicked, player class added using js */
+
+.video.player img {
+    display: none;
+}
+
+.video.player:after {
+    display: none;
+}
+
+#goBack {
+    cursor: pointer;
+}
+
+.justify-content-lg-end {
+    justify-content: end;
+}

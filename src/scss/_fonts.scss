@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat:400,600,700&display=swap');
+.montserrat-b {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.color-darkish-blue {
+    color: $blue2
+}
+
+.text-black {
+    color: #454545 !important;
+}
+
+.montserrat-sb {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.montserrat-r {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.lato-r {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.text-gray {
+    color: $grey;
+}
+
+a,
+a:hover,
+a:active {
+    text-decoration: none !important;
+}
+
+.fz-5 {
+    font-size: 4rem !important;
+    width: 48.7% !important;
+    margin-right: 50%;
+}
+
+.subTitle_hero_white-container {
+    font-size: 1.625rem;
+}
+
+.subTitle-child_hero_white-container {
+    font-size: 0.875rem;
+}
+
+.fsz-3_75 {
+    font-size: 3.75rem;
+}
+
+.font-sz-1_1 {
+    font-size: 1.125rem;
+}
+
+.fsz-3_1 {
+    font-size: 3.125rem;
+}
+
+.fsz-1_5 {
+    font-size: 1.5rem;
+}
+
+.text-gray:hover {
+    color: $white;
+}
+
+.line-h_1 {
+    line-height: 1;
+}
+
+u {
+    cursor: pointer;
+}

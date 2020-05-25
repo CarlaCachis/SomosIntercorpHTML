@@ -1,0 +1,65 @@
+.row-we-inter {
+    width: 70%;
+    padding-top: 3.25rem;
+    .four_cards {
+        padding-right: 1.25rem;
+        .card {
+            width: 11.875rem;
+            height: 18.9375rem;
+            .card-body {
+                height: 100%;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                .card-img-top {
+                    height: 40%;
+                    width: auto;
+                    transition-duration: .5s;
+                    -webkit-transition-duration: .5s;
+                    -webkit-transition-property: all;
+                    transition-property: all;
+                    transition-timing-function: ease;
+                }
+                .scale-icon {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
+
+.four_cards:first-child {
+    .card {
+        border-radius: 2rem 0 0 0;
+    }
+}
+
+.four_cards:last-child {
+    .card {
+        border-radius: 0 0 2rem 0;
+    }
+}
+
+.hero-secondPage.hero_Double {
+    .hero-content {
+        top: -85vh;
+    }
+}
+
+.hero-we {
+    @include background-hero($blue3, "../assets/fondo-somos-intercorp.png", 72%, 10%, 6.5rem);
+}
+
+@media (max-width: $breakpoint-9) {}
+
+@media (max-width: 767px) {}
