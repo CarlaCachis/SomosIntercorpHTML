@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yenifergalarza/interbank.git"
+    "url": "git+https://github.com/CarlaCachis/SomosIntercorpHTML"
   },
   "keywords": [],
   "author": "",
@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/yenifergalarza/interbank/issues"
   },
-  "homepage": "https://github.com/yenifergalarza/interbank#readme",
+  "homepage": "https://github.com/CarlaCachis/SomosIntercorpHTML#readme",
   "dependencies": {
     "bootstrap": "^4.4.1",
     "font-awesome": "^4.7.0",
